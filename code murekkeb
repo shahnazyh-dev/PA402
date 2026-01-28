@@ -1,0 +1,36 @@
+Console.WriteLine("n =");
+int n = int.Parse(Console.ReadLine());
+
+if (n <= 1)
+{
+    Console.WriteLine("sade deyil");
+    Console.ReadLine();
+    return;
+}
+if (n == 2)
+{
+    Console.WriteLine("sade eded");
+    Console.ReadLine();
+    return;
+}
+if (n % 2 == 0)
+{
+    Console.WriteLine("murekkebdir");
+    Console.ReadLine();
+    return;
+}
+int i = 3;
+while (i < n)
+{
+    if (n % i == 0)
+    {
+        Console.WriteLine("murekkebdir");
+        Console.ReadLine();
+        return;
+    }
+    i = i + 2;
+
+    Console.WriteLine("sade eded");
+    Console.ReadLine();
+    return;
+}
