@@ -1,0 +1,25 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        string[] sozler = { "yes", "no", "maybe", "sure" };
+        string sozutap = "no";
+        bool tapildi = false;
+
+        for (int i = 0; i < sozler.Length; i++)
+        {
+            if (sozler[i] == sozutap)
+            {
+                System.Console.WriteLine($"Soz tapildi: {sozutap}");
+                tapildi = true;
+                break;
+            }
+        }
+        if (!tapildi)
+        {
+            System.Console.WriteLine($"Soz tapilmadi: {sozutap}");
+        }
+    }
+}
+
