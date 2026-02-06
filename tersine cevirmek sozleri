@@ -1,0 +1,20 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        string[] sozler = { "rasta", "mimi ", "mandarin", "pablo" };
+
+        for (int i = 0; i < sozler.Length; i++) 
+        {
+            string soz = sozler[i];
+            string tersine = "";
+            {
+                for (int j = soz.Length - 1; j >= 0; j--)
+                {
+                    tersine += soz[j];
+                }
+                Console.WriteLine(tersine);
+            }
+        }
+    }
+}
